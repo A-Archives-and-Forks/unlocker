@@ -1,20 +1,24 @@
 # macOS Unlocker V4 for VMware Workstation
-
-## Unlocker 2007-2026
-This project is now complete and archived.
-
-The unlocker is complete and should continue to run as there have been few changes to the VMware code in many years
-
-***
-
-Please checkout the wiki. https://github.com/DrDonk/unlocker/wiki
-***
  
+> [!IMPORTANT]
+> 
+> The Unlocker project is now considered complete. What does this mean?
+> 
+> 1. Its is still completely functional including support for the latest VMware 26H1 release.
+> 2. VMware have now deprecated macOS support so there should not be any changes to the code.
+> 3. macOS 27 Golden Gate removes Intel support so we are at the end of the line for future macOS releases. 
+>
+> The Unlocker remains supported and should continue to run for the foreseeable future.
+>
+> There is a project called OC4VM which allows macOS guests without patching VMware.
+> It also supports AMD CPU based host systems.
+> The project can be found here https://github.com/DrDonk/OC4VM/tree/main.
+
 ## 1. Introduction
 Unlocker 4 is designed for VMware Workstation and Player and has been tested against:
 
-* Workstation Pro 16/17 on Windows and Linux
-* Workstation Player 16/17 on Windows and Linux
+* Workstation Pro 16/17/25/26 on Windows and Linux
+* Workstation Player 16/17/25/26 on Windows and Linux
 
 The Unlocker enables certain flags and data tables that are required to see the macOS type when setting
 the guest OS type, and modify the implmentation of the virtual SMC controller device. These capabiltiites are normally 
@@ -76,7 +80,10 @@ If a new VMware version is installed the patches will be lost as the update will
 You will need to re-run the unlock program to patch the newly installed VMware files. This does not apply to the Arch Linux AUR packages due to the provided ALPM hooks.
 
 ## 2.5 VMware Tools
-The Unlocker provides the VMware tools ISO images. Version 16/17/25H2 of Workstation Pro recognises the darwin.iso files and the tools can be installed in the usual way by using the "Install VMware Tools" menu item. The Player version does not automatically pick up the ISO images and so the ISO must be maually attached to the VM via the guest's settings.
+The Unlocker provides the VMware tools ISO images. Version 16/17/25/26 of Workstation Pro recognises
+the darwin.iso files and the tools can be installed in the usual way by using the "Install VMware Tools" menu item. 
+The Player version does not automatically pick up the ISO images and so the ISO must be maually attached 
+to the VM via the guest's settings.
 
 ## 3. Thanks
 Thanks to Zenith432 for originally building the C++ Unlocker and Mac Son of Knife
