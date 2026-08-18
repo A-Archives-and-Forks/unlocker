@@ -4,7 +4,7 @@
 > 
 > The Unlocker project is now considered complete. What does this mean?
 > 
-> 1. Its is still completely functional including support for the latest VMware 26H1 release.
+> 1. It is still completely functional including support for the latest VMware 26H1 release.
 > 2. VMware have now deprecated macOS support so there should not be any changes to the code.
 > 3. macOS 27 Golden Gate removes Intel support so we are at the end of the line for future macOS releases. 
 >
